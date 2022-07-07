@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
 
   protected
 
-  # overrides ActionController::RequestForgeryProtection#handle_unverified_request
+  # overrides | ActionController::RequestForgeryProtection#handle_unverified_request
   def handle_unverified_request
     super
     cookies.delete(:token)
